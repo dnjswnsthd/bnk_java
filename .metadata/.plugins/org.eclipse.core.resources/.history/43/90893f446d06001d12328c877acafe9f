@@ -1,0 +1,6 @@
+package com.bank.oop.test;
+
+public class GreetingAppTest {
+	public static void main(String[] args) {// main method..실행 메소드
+	}
+}

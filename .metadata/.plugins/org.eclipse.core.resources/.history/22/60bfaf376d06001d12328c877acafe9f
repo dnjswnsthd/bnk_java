@@ -1,0 +1,7 @@
+package com.bank.oop.test;
+
+public class GreetingAppTest {
+	public static void main(String[] args) {
+
+	}
+}

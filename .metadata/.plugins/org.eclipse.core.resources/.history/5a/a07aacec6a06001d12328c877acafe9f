@@ -1,0 +1,12 @@
+package test;
+/*GreetingTest는 문법은 자바 문법을 지켜서 작성된 코드이지만
+객체지향의 원리가 전혀 반영되지 않은 코드이다.*/
+public class GreetingTest {
+	public static void show(String s) {
+		System.out.println(s);
+	}
+	public static void main(String[] args) {
+		String s = "hello";
+		show(s);
+	}
+}

@@ -1,0 +1,11 @@
+package test;
+
+public class GreetingTest {
+	public static void show(String s) {
+		System.out.println(s);
+	}
+	public static void main(String[] args) {
+		String s = "hello";
+		show(s);
+	}
+}

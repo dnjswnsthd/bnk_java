@@ -1,0 +1,8 @@
+package com.bank.oop;
+/*
+ * Greeting
+ * 특정한 대상에게 인삿말을 출력하는 기능을
+ */
+public class Greeting {
+
+}
