@@ -1,28 +1,28 @@
 package com.edu.oop;
 /*
- * ¾îÁ¦ ÇÙ½É ÀÌ½´
- * object Class	  			| 		~ Test (Test Å¬·¡½º, ½ÇÇà Å¬·¡½º)
- * main() ÀÌ ¾ø´Ù ---> °Ÿ¸¶ÀÏÀÇ ´ë»ó			main() ÀÌ ÀÖ´Ù ---> ½ÇÇàÀÇ ´ë»ó
- * 									1. °´Ã¼ »ı¼º == Å¬·¡½ºÀÇ ¸â¹ö¸¦ ¸Ş¸ğ¸®¿¡ ¿Ã¸°´Ù.
- * 									2. Á¢±Ù 
- * 										ÇÊµå -> °ª ÇÒ´ç
- * 										¸Ş¼Òµå -> È£Ãâ
- * ±¸¼º¿ä¼Ò
- * filed(¸â¹ö º¯¼ö) : °ªÀÌ ÀúÀåµÇ´Â °ø°£
- * method : ±â´É 
+ * ì–´ì œ í•µì‹¬ ì´ìŠˆ
+ * object Class	  			| 		~ Test (Test í´ë˜ìŠ¤, ì‹¤í–‰ í´ë˜ìŠ¤)
+ * main() ì´ ì—†ë‹¤ ---> ì»¾ë§ˆì¼ì˜ ëŒ€ìƒ			main() ì´ ìˆë‹¤ ---> ì‹¤í–‰ì˜ ëŒ€ìƒ
+ * 									1. ê°ì²´ ìƒì„± == í´ë˜ìŠ¤ì˜ ë©¤ë²„ë¥¼ ë©”ëª¨ë¦¬ì— ì˜¬ë¦°ë‹¤.
+ * 									2. ì ‘ê·¼ 
+ * 										í•„ë“œ -> ê°’ í• ë‹¹
+ * 										ë©”ì†Œë“œ -> í˜¸ì¶œ
+ * êµ¬ì„±ìš”ì†Œ
+ * filed(ë©¤ë²„ ë³€ìˆ˜) : ê°’ì´ ì €ì¥ë˜ëŠ” ê³µê°„
+ * method : ê¸°ëŠ¥ 
  *  --------------------------------------------------------------------
  *  NoteBook 
 */
 
 public class NoteBook {
-	// 1. ÇÊµå ¼±¾ğ
+	// 1. í•„ë“œ ì„ ì–¸
 	public String brand;
 	public int price;
 	public int serialNumber;
-	
-	// 2. ¸Ş¼Òµå
-	public void printNoteBookInfo() {
-		StringBuilder sb = new StringBuilder();
+
+	// 2. ë©”ì†Œë“œ
+	public void printNoteBookInfo() { // ë©”ì†Œë“œ ì„ ì–¸ë¶€, return type + method name(ë§¤ê°œ ë³€ìˆ˜)
+		StringBuilder sb = new StringBuilder(); // ë©”ì†Œë“œ êµ¬í˜„ë¶€
 		sb.append("NotebootInfo :: " + brand + ", " + price + ", " + serialNumber + "\n");
 		System.out.println(sb);
 	}

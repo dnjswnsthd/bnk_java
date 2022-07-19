@@ -12,5 +12,7 @@ public class NoteBookTest {
 		nb.brand = "samsung";
 		nb.price = 1000000;
 		nb.serialNumber = 1000;
+		
+		nb.printNoteBookInfo();
 	}
 }
