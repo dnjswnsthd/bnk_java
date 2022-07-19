@@ -5,7 +5,9 @@ public class Shirt {
 	public boolean longSleeved;
 	public char size;
 	
-	// 명시적 생성자 (필드 초기화)
+	public Shirt() {} // 기본 생성자
+	
+	// 명시적 생성...필드 초기화
 	public Shirt(String brand, boolean longSleeved, char size) {
 		this.brand = brand;
 		this.longSleeved = longSleeved;
