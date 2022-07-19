@@ -3,22 +3,25 @@ package com.bank.oop.test;
 import com.bank.oop.Greeting;
 
 /*
- * 			OOP
- * 
- * 		Object Oriented Class	|	~~ Test
- * 
- * 		°´Ã¼¸¦ ÀÇ¹ÌÇÏ´Â Å¬·¡½º				°´Ã¼°¡ ¾Æ´Ô
- * 									¾ÕÀÇ Object Å¬·¡½º¸¦ ½ÇÁ¦ °´Ã¼·Î ¸¸µé¾îÁÖ´Â ½ÇÇà Å¬·¡½º
+ *           OOP
+ *           
+ *     Object Oriented Class    |   ~~ Test
+ *     
+ *     ê°ì²´ë¥¼ ì˜ë¯¸í•˜ëŠ” í´ëž˜ìŠ¤                       ê°ì²´ê°€ ì•„ë‹˜
+ *                                  ì•žì˜ Object í´ëž˜ìŠ¤ë¥¼ ì‹¤ì œ ê°ì²´ë¡œ ë§Œë“¤ì–´ì£¼ëŠ” ì‹¤í–‰ í´ëž˜ìŠ¤
+ *     
  */
 public class GreetingAppTest {
-	public static void main(String[] args) {// main method..½ÇÇà ¸Þ¼Òµå
-		// °´Ã¼ »ý¼º == ¸Þ¸ð¸®¿¡ Å¬·¡½ºÀÇ ¸â¹öµéÀ» ´Ù ¿Ã¸°´Ù. == ¸â¹ö¿¡ Á¢±Ù
+	public static void main(String[] args) {// main method..ì‹¤í–‰ë©”ì†Œë“œ
+		// ê°ì²´ ìƒì„± == ë©”ëª¨ë¦¬ì— í´ëž˜ìŠ¤ì˜ ë©¤ë²„ë“¤ì„ ë‹¤ ì˜¬ë¦°ë‹¤. == ë©¤ë²„ì— ì ‘ê·¼
 		Greeting hello = new Greeting();
 		/*
-		 * Á¢±Ù ÇÊµå --> °ª ÇÒ´ç ¸Þ¼Òµå --> ¸Þ¼Òµå È£Ãâ
+		 * ì ‘ê·¼
+		 * í•„ë“œ  --> ê°’í• ë‹¹
+		 * ë©”ì†Œë“œ --> ë©”ì†Œë“œë¥¼ í˜¸ì¶œ
 		 */
-		hello.who = "¿©·¯ºÐ";
-		hello.greet = "¸¶Áö¸· ½Ã°£ÀÔ´Ï´Ù~~~ ¼ö°í ¸¹À¸¼Ì¾î¿ä.";
+		hello.who = "ì—¬ëŸ¬ë¶€ìš´~~";
+		hello.greet = "ë§ˆì§€ë§‰ ì‹œê°„ìž…ë‹ˆë‹¤~~~ìˆ˜ê³ ë§Žìœ¼ì…¨ì–´ìš”";
 		hello.sayHello();
 	}
 }

@@ -11,7 +11,8 @@ package com.edu.oop;
  * filed(멤버 변수) : 값이 저장되는 공간
  * method : 기능 
  *  --------------------------------------------------------------------
- *  NoteBook 
+ *  NoteBook
+ *  Working Method 
 */
 
 public class NoteBook {
@@ -25,5 +26,10 @@ public class NoteBook {
 		StringBuilder sb = new StringBuilder(); // 메소드 구현부
 		sb.append("NotebootInfo :: " + brand + ", " + price + ", " + serialNumber + "\n");
 		System.out.println(sb);
+	}
+	// 3. 메소드 추가
+	// 노트북의 브랜드를 리넡하는 기능을 추가
+	public String getBrand() {
+		return brand; // 메소드를 호출한 지점으로 값이 리턴된다.. back된다.
 	}
 }
