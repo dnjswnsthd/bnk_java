@@ -25,8 +25,8 @@ public class BankAppTest {
 		System.out.println("은행 명을 입력세요");
 		bankName = br.readLine();
 		System.out.println();
-		// 두 번째 계좌 입력
 		Account acc1 = new Account(accNumber, CustName, balance, bankName);
+		// 두 번째 계좌 입력
 		System.out.println("계좌번호를 입력해주세요");
 		accNumber = Integer.parseInt(br.readLine());
 		System.out.println("성함을 입력해주세요");
@@ -36,6 +36,7 @@ public class BankAppTest {
 		System.out.println("은행 명을 입력세요");
 		bankName = br.readLine();
 		Account acc2 = new Account(accNumber, CustName, balance, bankName);
+		
 		Customer cust1 = new Customer("미정", acc1, "부산시");
 		Customer cust2 = new Customer("자경", acc2, "부산시");
 		System.out.println("미정 고객님 이시라면 1번 자경 고객님이 시라면 2번을 눌러주세요");
