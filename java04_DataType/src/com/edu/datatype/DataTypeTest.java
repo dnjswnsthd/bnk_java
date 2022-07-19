@@ -10,13 +10,15 @@ package com.edu.datatype;
  * set() / get()
  */
 class WhiteBoard{
+	// 필드는 기본값을 가진다...
+	// 로컬 변수는 기본값이 없다. 그래서 사용하기전 반드시 초기화해야한다...!!
 	public String madeCompany;
 	public String color;
-	public double price;
+	public float price;
 	public boolean scratch;
 	public String material;
-	public BuyDate buyDate;
-	public void setWhiteBoardInfo(String madeCompany, String color, double price, boolean scratch, String material, BuyDate buyDate) {		
+	public MyDate buyDate;
+	public void setWhiteBoardInfo(String madeCompany, String color, float price, boolean scratch, String material, MyDate buyDate) {		
 		this.madeCompany = madeCompany;
 		this.color = color;
 		this.price = price;
@@ -29,7 +31,7 @@ class WhiteBoard{
 	}
 }
 
-class BuyDate{
+class MyDate{
 	public int year;
 	public int month;
 	public int day;
@@ -50,9 +52,9 @@ public class DataTypeTest {
 		 * 2. 함수 호출
 		 */
 		WhiteBoard wb = new WhiteBoard();
-		BuyDate bd = new BuyDate();
+		MyDate bd = new MyDate();
 		bd.setBuyDate(2022, 7, 19);
-		wb.setWhiteBoardInfo("동신사", "W", 300.23, false, "합판과 알루미늄", bd);
+		wb.setWhiteBoardInfo("동신사", "W", 34.25f, false, "합판과 알루미늄", bd);
 		System.out.println(wb.getWhiteBoardInfo());
 	}
 }
