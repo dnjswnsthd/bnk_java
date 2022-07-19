@@ -1,7 +1,19 @@
 package com.edu.oop.test;
 
 import com.edu.oop.NoteBook;
-
+/*
+ * NoteBookTest의 문제
+ * :: 
+ * 필드가 많아질수록 코드라인이 늘어난다.
+ * 더무기 생성되는 개체가 커질수록 코드량은 기하급수적으로 증가한다.
+ * 
+ * 필드에 값을 직접 할당하면 발생하는 문제점
+ * 
+ * ---------------------------------------------
+ * NoteBookTest의 해결책
+ * ::
+ * 필드 초기화 해주는 기능을 만든다.
+ */
 public class NoteBookTest {
 	public static void main(String[] args) {
 		/*
