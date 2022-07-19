@@ -14,7 +14,7 @@ public class BankAppTest {
 		String CustName = "";
 		double balance = 0.0;
 		String bankName = "";
-		boolean exit = false;
+		
 		// 첫 번째 계좌 입력
 		System.out.println("계좌번호를 입력해주세요");
 		accNumber = Integer.parseInt(br.readLine());
