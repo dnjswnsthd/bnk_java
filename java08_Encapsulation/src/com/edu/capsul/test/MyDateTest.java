@@ -17,7 +17,6 @@ public class MyDateTest {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int month, day = 0;
 		MyDate md = new MyDate();
-		
 		System.out.println("월을 입력해주세요");
 		month = Integer.parseInt(br.readLine());
 		
