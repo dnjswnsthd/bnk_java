@@ -10,15 +10,21 @@ import com.edu.company.vo.MyDate;
 public class CompanyService {
 	// 부서에 있는 모든 직원을 리턴한다.
 	public Employee[] getAllEmployee(Department dept) {
-		Employee[] employees = null;
-
+		Employee[] employees = new Employee[dept.getEmployee().length];
+		int index = 0;
+		for (Employee e : dept.getEmployee()) {
+			employees[index++] = e;
+		}
 		return employees;
 	}
 
 	// 특정 회사의 모든 부서를 리턴한다.
-	public Department[] getAllDepartment(String name) {
-		Department[] dapartments = null;
-
+	public Department[] getAllDepartment(Company comp) {
+		Department[] dapartments = new Department[comp.getDepartment().length];
+		int index = 0;
+		for (Department d : comp.getDepartment()) {
+			dapartments[index++] = d;
+		}
 		return dapartments;
 	}
 
@@ -33,15 +39,18 @@ public class CompanyService {
 	}
 
 	// 시가 총액이 (Input) 이상인 회사의 직급이 (Input)인 직원 리스트
-	public ArrayList <Employee> searchEmployeeByMarketCapAndPosition(Company [] companys, Long marketCap, String position) {
-		ArrayList <Employee> employees = new ArrayList<>();
-		for(Company c : companys) {
-			if(c.getMarketCap() >= marketCap) {
-				for(Department d : c.getDepartment()) {
-					if(d.getEmployee() == null) continue; 
-					for(Employee e : d.getEmployee()) {
-						if(e.getPosition() == null) continue;
-						if(e.getPosition().equals(position)) {
+	public ArrayList<Employee> searchEmployeeByMarketCapAndPosition(Company[] companys, Long marketCap,
+			String position) {
+		ArrayList<Employee> employees = new ArrayList<>();
+		for (Company c : companys) {
+			if (c.getMarketCap() >= marketCap) {
+				for (Department d : c.getDepartment()) {
+					if (d.getEmployee() == null)
+						continue;
+					for (Employee e : d.getEmployee()) {
+						if (e.getPosition() == null)
+							continue;
+						if (e.getPosition().equals(position)) {
 							employees.add(e);
 						}
 					}
@@ -72,18 +81,21 @@ public class CompanyService {
 
 		return employees;
 	}
+
 	// 특정 회사의 각 부서별 급여 평균의 최대인 부서명을 리턴한다.
 	public String getMaxAvgSalaryDept(Company company) {
 		String tmp = "";
 		Double avg = 0.0;
-		for(Department d : company.getDepartment()) {
+		for (Department d : company.getDepartment()) {
 			double sum = 0;
-			if(d.getEmployee() == null) continue;
-			for(Employee e : d.getEmployee()) {
-				if(e.getSalary() == 0) continue;
+			if (d.getEmployee() == null)
+				continue;
+			for (Employee e : d.getEmployee()) {
+				if (e.getSalary() == 0)
+					continue;
 				sum += e.getSalary();
 			}
-			if(avg < sum / d.getEmployee().length) {
+			if (avg < sum / d.getEmployee().length) {
 				avg = sum / d.getEmployee().length;
 				tmp = d.getName();
 			}

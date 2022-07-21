@@ -12,9 +12,9 @@ public class GradeIfTest4 {
 		String grade = ""; 
 		switch(score){
 			case 90: System.out.println("A"); break;
-			case 80: System.out.println("B"); break;
-			case 70: System.out.println("C"); break;
-			case 60: System.out.println("D"); break;
+			case 80: System.out.println("B"); 
+			case 70: System.out.println("C"); 
+			case 60: System.out.println("D"); 
 			default : System.out.println("f");
 		}
 		

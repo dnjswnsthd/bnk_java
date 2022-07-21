@@ -60,4 +60,16 @@ public class EmployeePolyService {
 			total += e.getSalary() * 12;
 		return total;
 	}
+	
+	public Employee findEmployee(Employee[ ] employees, String name) {
+		Employee find = null;
+		
+		return find;
+	}
+	
+	public Employee[] findEmployee(Employee[ ] employees, String dept,String address) {
+		Employee[] temp = new Employee[employees.length];
+		
+		return temp;
+	}
 }
